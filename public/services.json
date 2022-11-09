@@ -1,0 +1,158 @@
+[
+    {
+        "_id": "635a0c0b64a6d231228942ae",
+        "service_id": "01",
+        "title": "Kacchi Biriyani",
+        "img": "https://ibb.co/tJCbDkF",
+        "price": "200.00",
+        "description": "If you are asked to name a few signature food items of Dhaka city, Kachchi Biryani will be at the top of the list. For us Bangladeshis, Kachchi Biryani is another name for love. We will never get tired of eating it.The dish's origins are up for debate, but most food historians agree that the precursor to South Asian biryani first emerged in Persia, probably as an unfussed mix of rice and meat, and travelled to the subcontinent through trade, pilgrimage, and conquest.In 1610, after the Mughal rulers declared Dhaka as the provincial capital, Mughal subedars and other high officials arrived in Dhaka to manage the administration, and they brought — along with intrigue, grandeur, and tantrums — the biryani.Back then, it is said, the biryani could be prepared only for members of the ruling family, and that too on special occasions. The cooks came from the west, where the Hyderabadi biryani had only just begun to spread its aroma around India.Somewhere along the way, though, the Dhaka biryani developed its own characteristics, which set it apart from its Hyderabadi progenitor and even from the Sindhi, Kozhikode, Kolkata, Lucknow and Tehari offshoots.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635a0c0b64a6d231228942af",
+        "service_id": "02",
+        "title": "Best Pizza",
+        "img": "https://ibb.co/D9HFB6L",
+        "price": "250.00",
+        "description": "pizza, dish of Italian origin consisting of a flattened disk of bread dough topped with some combination of olive oil, oregano, tomato, olives, mozzarella or other cheese, and many other ingredients, baked quickly—usually, in a commercial setting, using a wood-fired oven heated to a very high temperature—and served hot.One of the simplest and most traditional pizzas is the Margherita, which is topped with tomatoes or tomato sauce, mozzarella, and basil. Popular legend relates that it was named for Queen Margherita, wife of Umberto I, who was said to have liked its mild fresh flavour and to have also noted that its topping colours—green, white, and red—were those of the Italian flag.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b591a1dafe382a9da8c96",
+        "service_id": "03",
+        "title": "Homemade Burger",
+        "img": "https://ibb.co/ZBvxLHL",
+        "price": "200.00",
+        "description": "They were the hottest things to hit the streets in 2012. And 2013. Last year, too. And our love affair with the burger shows no sign of slowing this year and why would it? The elegant simplicity of a well-made burger remains a thing of beauty and deserves to be celebrated.But while the cool kids queue for the latest hot spot serving up their hip take on the classic, the beauty of the burger is that its just as easy to whip up at home.Its a meal guaranteed to get every member of the family smiling especially the cook, for summer is the time of the quick-fix dinner and burgers are flag-waving paid-up members of that club. Granted, its doubtful “I must eat more burgers this year” featured on many resolution lists on Jan 1, but they can be surprisingly healthy especially when making them at home.The best burgers offer a combination of tastes and textures sweet, sour, salt with a bit of crunch. The patty needs to be juicy, the bun soft but sturdy, and you want the meat/bun/accompaniment ratio to be even from first to last bite.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5afc1dafe382a9da8c98",
+        "service_id": "04",
+        "title": "Home made Beef Kalabuna",
+        "img": "https://ibb.co/TTgHD9z",
+        "price": "150.00",
+        "description": "Coming back to Kala Bhuna, I was told Chittagong is famous for this dish however, this is available all through Bangladesh. This is, however, documented information This dish is signified by the color which is almost blackish. Beef is the best-suited meat while making Kala Bhuna as the temperature needed for the blackish color is ideal for cooking Beef. Below are a few important notes related to Traditional Kala Bhuna. I have had a few useful tips from my house-help, Rosie, as well. Her family runs a Beef Kebab shop in a small town in West Bengal and she is an amazing cook herself. My blog is already having Rosie's Handi Kebab recipe.This was when I contacted my Mother-in-law and she came up with some very useful input! Maa though is not a Bangal however, she is an amazing cook and quite knowledgeable when it comes to Bengali Muslim cuisine. Maa taught me several delicacies over the years directly (Whenever I visit my in-laws I follow the way she cooks) or indirectly through Mehebub. I am thankful to her for that.In fact, over the years I have seen my relatives from Mehebub's side cooking different delicacies which are not that known. These are mostly Bengali Muslim delicacies from West Bengal. I have posted a few recipes already and am about to post several more in the coming time.",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5b691dafe382a9da8c99",
+        "service_id": "05",
+        "title": "Homemade ChickenFry",
+        "img": "https://ibb.co/CVYqqJ4",
+        "price": "30.00",
+        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius veniam nostrum dolores nemo quas. Minima ullam, veniam, nesciunt quae dolore animi blanditiis deserunt, ea esse dolorum ipsum quibusdam ipsa! Corrupti at, excepturi, fugiat aut nihil neque aliquid sapiente dignissimos provident, animi molestiae ipsum. Repudiandae ipsa id nihil reiciendis soluta eos ducimus pariatur, nam architecto tenetur quo quos commodi est libero repellendus vitae. Fuga numquam nulla nam, facere neque expedita voluptatibus pariatur necessitatibus vel, dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum. Aspernatur ex quibusdam at cum nulla!",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    },
+    {
+        "_id": "635b5ba51dafe382a9da8c9a",
+        "service_id": "06",
+        "title": "Homemade Chicken Roast",
+        "img": "https://ibb.co/cXkNfXw",
+        "price": "20.00",
+        "description": "This roast chicken is not the same as the popular ghee roast from Mangalore/Kundapura. Here are a few differences in the recipe.First of all, the amount of ghee used in the recipe is significantly less compared to the chicken ghee roast. Ingredients like saunf (fennel seeds), onion, and ginger are not added to the traditional Mangalorean ghee roast - instead, mustard seeds and fenugreek seeds (or methi) are added. The amount of other common spices also varies between the two recipes.In a mixer or blender, add the roasted ingredients along with garlic, ginger, tamarind, and water, and grind it to a thick, smooth paste.To this, add the marinated chicken, ground masala, jaggery, and mix. Cover the pan with a lid. Cook on medium to medium-low flame for 5 minute",
+        "facility": [
+            {
+                "name": "Instant Car Services",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "24/7 Quality Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Easy Customer Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            },
+            {
+                "name": "Quality Cost Service",
+                "details": "Fuga numquam nulla nam, facere neque dignissimos ab esse magni accusamus eveniet ad corrupti, architecto nostrum."
+            }
+        ]
+    }
+]
