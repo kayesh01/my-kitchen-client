@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import ServiceCard from './ServiceCard';
+import AllServiceCard from './AllServiceCard';
 
-const Services = () => {
-    const [services, setServices] = useState([]);
+const AllServices = () => {
+    const [services, setServices] = useState([])
     useEffect(() => {
         fetch('services.json')
             .then(res => res.json())
-            .then(data => setServices(data))
+            .then(data => {
+                setServices(data)
+                console.log(data)
+            })
 
     }, [])
     return (
@@ -19,17 +21,15 @@ const Services = () => {
             </div>
             <div className='grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mt-4'>
                 {
-                    services.map(service => <ServiceCard
+                    services.map(service => <AllServiceCard
                         key={service._id}
                         service={service}
-                    ></ServiceCard>)
+                    ></AllServiceCard>)
                 }
-            </div>
-            <div className='text-center'>
-                <Link to='/services'><button className="btn btn-outline btn-secondary mt-4 ">See all services</button></Link>
+
             </div>
         </div>
     );
 };
 
-export default Services;
+export default AllServices;

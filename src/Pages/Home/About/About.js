@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import imag from '../../../assets/Image.jpg'
 
 const About = () => {
@@ -12,7 +13,7 @@ const About = () => {
                     <p className="text-2xl text-orange-700 font-bold">About Us</p>
                     <h1 className="text-5xl font-bold">We Are qualifed for made <br /> special food for specail occasion.</h1>
                     <p className="py-6">Making your own meals also allows you to avoid the myriad additives and preservatives that may be found in modern cuisine, allowing you to consume highly nutritious meals instead.</p>
-                    <button className="btn btn-primary">Our Services</button>
+                    <Link to='/services'><button className="btn btn-primary">Our Services</button></Link>
                 </div>
             </div>
         </div>
