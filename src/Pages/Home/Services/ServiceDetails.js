@@ -1,9 +1,11 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
+import ReviewCart from '../../ReviewCart/ReviewCart';
 
 const ServiceDetails = () => {
     const { _id, title, img, description, price } = useLoaderData();
+    const [reviews, setReviews] = useState([]);
     const { user } = useContext(AuthContext)
     const handleAddReview = event => {
         event.preventDefault();
@@ -36,9 +38,15 @@ const ServiceDetails = () => {
                 console.log(data)
             })
             .catch(er => console.log(er))
-
-
     }
+    useEffect(() => {
+        fetch('http://localhost:5000/reviews')
+            .then(res => res.json())
+            .then(data => {
+                setReviews(data);
+                console.log(data);
+            })
+    }, [])
     return (
         <div className="card card-compact w-100% bg-base-100 shadow-xl">
             <div className='text-center'>
@@ -50,6 +58,14 @@ const ServiceDetails = () => {
                 <p>{description}</p>
                 <p className='font-bold text-2xl'>Price: {price}</p>
             </div>
+            <h2 className='text-3xl mb-3 text-pink-400'>All Comments are here.</h2>
+            {
+                reviews.map(review => <ReviewCart
+                    key={review._id}
+                    message={review}
+                >
+                </ReviewCart>)
+            }
 
             <div className='text-center flex flex-col'>
                 {
