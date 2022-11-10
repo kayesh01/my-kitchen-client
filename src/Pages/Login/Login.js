@@ -1,11 +1,21 @@
+import { GoogleAuthProvider } from 'firebase/auth';
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import img from '../../assets/login.jpg'
 import { AuthContext } from '../../contexts/AuthProvider/AuthProvider';
+import useTitle from '../../Hooks/useTitle';
+
+
 
 const Login = () => {
-    const { login } = useContext(AuthContext);
+    const { login, googleLogIn } = useContext(AuthContext);
 
+    const googleProvider = new GoogleAuthProvider()
+    const navigate = useNavigate();
+    const location = useLocation();
+    useTitle('Login')
+
+    const from = location.state?.from?.pathname || '/';
     const handleLogin = event => {
         event.preventDefault();
         const form = event.target;
@@ -15,11 +25,19 @@ const Login = () => {
         login(email, password)
             .then(res => {
                 const user = res.user;
+                form.reset();
+                navigate(from, { replace: true });
                 console.log(user);
             })
             .then(err => console.error(err))
+    }
 
-
+    const handleGoogleSignIn = () => {
+        googleLogIn(googleProvider)
+            .then(result => {
+                const user = result.user;
+                navigate(from, { replace: true });
+            })
     }
 
     return (
@@ -42,16 +60,13 @@ const Login = () => {
                                 <span className="label-text">Password</span>
                             </label>
                             <input type="password" name='password' placeholder="password" className="input input-bordered" />
-                            <label className="label">
-                                <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
-                            </label>
                         </div>
                         <div className="form-control mt-6">
                             <input className="btn btn-primary" type="submit" value="Login" />
                         </div>
                     </form>
                     <p className='text-center mb-5'>New to My Kitchen ?<Link className='font-bold text-orange-600' to='/signup'>Sign UP</Link> </p>
-                    <button className="btn btn-outline btn-accent">Google Sign in</button>
+                    <button onClick={handleGoogleSignIn} className="btn btn-outline btn-accent">Google Sign in</button>
                 </div>
             </div>
         </div>

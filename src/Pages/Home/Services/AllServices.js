@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from 'react';
+import useTitle from '../../../Hooks/useTitle';
 import AllServiceCard from './AllServiceCard';
 
 const AllServices = () => {
     const [services, setServices] = useState([])
+    useTitle('Services')
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('http://localhost:5000/allservices')
             .then(res => res.json())
             .then(data => {
                 setServices(data)
