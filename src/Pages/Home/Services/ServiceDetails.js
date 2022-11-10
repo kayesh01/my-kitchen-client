@@ -3,9 +3,42 @@ import { Link, useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
 const ServiceDetails = () => {
-    const { title, img, description, price } = useLoaderData();
+    const { _id, title, img, description, price } = useLoaderData();
     const { user } = useContext(AuthContext)
-    console.log(user);
+    const handleAddReview = event => {
+        event.preventDefault();
+        const form = event.target;
+        const reviews = form.review.value;
+        const email = user.email;
+        const img = user.photoURL || form.image.value;
+        const name = user?.displayName || form.name.value;
+        console.log(reviews, email, img, name);
+        const review = {
+            service: _id,
+            reviews,
+            email,
+            img,
+            name
+        }
+        fetch('http://localhost:5000/reviews', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(review)
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('review added successfully.')
+                }
+                form.reset();
+                console.log(data)
+            })
+            .catch(er => console.log(er))
+
+
+    }
     return (
         <div className="card card-compact w-100% bg-base-100 shadow-xl">
             <div className='text-center'>
@@ -22,9 +55,12 @@ const ServiceDetails = () => {
                 {
                     user?.uid ?
                         <>
-                            <h2 className='text-3xl text-pink-600'>Review section.</h2>
-                            <textarea className="textarea textarea-secondary" placeholder="Add Your review Here"></textarea>
-                            <button className="btn btn-primary m-2">Add Review</button>
+                            <form onSubmit={handleAddReview}>
+                                <input name="name" type="text" placeholder="Type your Name." className="input input-bordered input-secondary w-1/4 mb-2" required />
+                                <input name="image" placeholder="give image URL" className="input input-bordered input-secondary w-full mb-2" required />
+                                <input name="review" type="text" placeholder="Type your review Here." className="input input-bordered input-secondary w-full" required />
+                                <input className='btn m-4' type="submit" value="Add your review" />
+                            </form>
                         </>
                         :
                         <>

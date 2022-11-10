@@ -17,7 +17,7 @@ const MyService = () => {
             img: image,
             description: description,
         }
-        fetch('http://localhost:5000/allservice', {
+        fetch('http://localhost:5000/service', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -25,8 +25,15 @@ const MyService = () => {
             body: JSON.stringify(service)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('Service added successfully.')
+                }
+                form.reset();
+                console.log(data)
+            })
             .catch(er => console.log(er));
+
     }
 
     return (
@@ -36,11 +43,11 @@ const MyService = () => {
             </div>
             <form onSubmit={handleAddService}>
                 <div className='grid md:grid-cols-2 gap-4'>
-                    <input name="title" type="text" placeholder="Type Title" className="input input-bordered input-secondary w-full" required />
-                    <input name='price' type="text" placeholder="Type price" className="input input-bordered input-secondary w-full" required />
+                    <input name="title" type="text" placeholder="Service Title" className="input input-bordered input-secondary w-full" required />
+                    <input name='price' type="text" placeholder="Service price" className="input input-bordered input-secondary w-full" required />
                     <input type="text" placeholder="email" defaultValue={user?.email} className="input input-bordered input-secondary w-full" readOnly />
                     <input name="image" placeholder="give image URL" className="input input-bordered input-secondary w-full" required />
-                    <input name="description" type="text" placeholder="Type Description" className="input input-bordered input-secondary w-full" required />
+                    <input name="description" type="text" placeholder="Service Description" className="input input-bordered input-secondary w-full" required />
                 </div>
                 <input className='btn m-4' type="submit" value="Add your Service" />
             </form>
