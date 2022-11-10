@@ -1,8 +1,25 @@
 import React from 'react';
 
 const MyReviewCard = ({ message }) => {
-    const { reviews, img, name } = message;
+    const { _id, reviews, img, name } = message;
     console.log(message);
+    const deleteReview = (id) => {
+        fetch(`http://localhost:5000/reviews/${id}`, {
+            method: 'DELETE',
+            headers: {
+                'content-type': 'application/json'
+            },
+        })
+            .then(res => res.json())
+            .then(data => {
+                if (data.acknowledged) {
+                    alert('Service added successfully.')
+                }
+                console.log(data)
+            })
+            .catch(er => console.log(er));
+
+    }
     return (
         <div className="card card-compact w-96 bg-base-100 shadow-xl">
             <figure><img src={img} alt="Shoes" /></figure>
@@ -11,7 +28,7 @@ const MyReviewCard = ({ message }) => {
                 <p>{reviews}</p>
                 <div className="card-actions justify-end">
                     <button className="btn btn-primary">update</button>
-                    <button className="btn btn-primary">Delete</button>
+                    <button onClick={() => deleteReview(_id)} className="btn btn-primary">Delete</button>
                 </div>
             </div>
         </div>
