@@ -13,7 +13,7 @@ const MyReviewCard = ({ message }) => {
             .then(res => res.json())
             .then(data => {
                 if (data.acknowledged) {
-                    alert('Service added successfully.')
+                    alert('Service deleted successfully.')
                 }
                 console.log(data)
             })

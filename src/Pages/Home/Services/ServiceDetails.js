@@ -35,18 +35,17 @@ const ServiceDetails = () => {
                     alert('review added successfully.')
                 }
                 form.reset();
-                console.log(data)
+                console.log('hello', data)
             })
             .catch(er => console.log(er))
     }
     useEffect(() => {
-        fetch('http://localhost:5000/reviews')
+        fetch(`http://localhost:5000/reviews?id=${_id}`)
             .then(res => res.json())
             .then(data => {
                 setReviews(data);
-                console.log(data);
             })
-    }, [])
+    }, [_id])
     return (
         <div className="card card-compact w-100% bg-base-100 shadow-xl">
             <div className='text-center'>
